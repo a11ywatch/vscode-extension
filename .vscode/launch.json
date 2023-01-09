@@ -13,20 +13,6 @@
 			],
 			"preLaunchTask": "${defaultBuildTask}",
 			"sourceMaps": true
-		},
-		{
-			"name": "Extension Tests",
-			"type": "extensionHost",
-			"request": "launch",
-			"args": [
-				"--extensionDevelopmentPath=${workspaceFolder}",
-				"--extensionTestsPath=${workspaceFolder}/out/test/index"
-			],
-			"outFiles": [
-				"${workspaceFolder}/out/test/**/*.js"
-			],
-			"preLaunchTask": "${defaultBuildTask}",
-			"sourceMaps": true
 		}
 	]
 }

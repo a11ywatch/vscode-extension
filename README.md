@@ -1,6 +1,6 @@
 # vscode-extension-a11ywatch
 
-VSCode Extension bringing A11yWatch to your IDE.
+[VSCode](https://code.visualstudio.com/insiders/) Extension bringing A11yWatch to your IDE. 
 
 ![vscode extension example](https://user-images.githubusercontent.com/8095978/211318106-30e7601d-52c7-4ae3-8b05-29e686617a1c.gif)
 
@@ -25,6 +25,7 @@ Whats included:
 ## Todo
 
 - full fletched portable system usage of components from `a11ywatch-react-js`.
+- add sign out btn.
 - add configs for workflows without the webview.
 - add crawl multi site pages.
 - add [turbopack](https://turbo.build/pack).
