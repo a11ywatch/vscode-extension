@@ -2,7 +2,7 @@
 
 [VSCode](https://code.visualstudio.com/insiders/) Extension bringing A11yWatch to your IDE. 
 
-![vscode extension example](https://user-images.githubusercontent.com/8095978/211318106-30e7601d-52c7-4ae3-8b05-29e686617a1c.gif)
+![vscode extension example](https://user-images.githubusercontent.com/8095978/211420387-26244092-ac8e-42e2-a141-f025f7812ef4.gif)
 
 ## Development
 

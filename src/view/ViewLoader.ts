@@ -14,7 +14,8 @@ export class ViewLoader {
 
     this.panel = vscode.window.createWebviewPanel('reactApp', 'A11yWatch App', vscode.ViewColumn.One, {
       enableScripts: true,
-      retainContextWhenHidden: true,
+      enableForms: true,
+      retainContextWhenHidden: false,
       localResourceRoots: [vscode.Uri.file(join(this.context.extensionPath, 'out', 'app'))],
     });
 
