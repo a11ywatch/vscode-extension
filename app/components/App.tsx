@@ -9,7 +9,7 @@ import {
 import { A11yWatchProvider } from "@a11ywatch/react-a11ywatch-js";
 
 const MainApp = () => {
-  const { account } = useA11yWatchContext();
+  const { account, onLogout } = useA11yWatchContext();
   const [multi, setMulti] = useState<boolean>(false); // todo: bind to state
   const [loginView, setAuthView] = useState<boolean>(false); // todo: bind to state
 
@@ -19,7 +19,7 @@ const MainApp = () => {
 
   return (
     <div className="py-2 space-y-2">
-      {!account.authed ? <button onClick={onLoginFormEvent} className={"px-2 py-2 border-b"}>Login or Register?</button> : null}
+      {!account.authed ? <button onClick={onLoginFormEvent} className={"px-2 py-2 border-b"}>Login or Register?</button> : <button onClick={onLogout} className={"px-2 py-2 border-b"}>Logout?</button>}
       {loginView ? <SignOnForm /> : null}
       <AuditProvider persist multi={multi}>
         <div className="flex space-x-2 place-items-center py-2">

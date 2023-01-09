@@ -1,14 +1,17 @@
 {
   "name": "vscode-a11ywatch-extension",
-  "displayName": "VSCode A11yWatch Extension",
+  "displayName": "A11yWatch",
   "description": "A11yWatch in visual studio code.",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.56.0"
+    "vscode": "^1.74.0"
   },
   "categories": [
-    "Other"
+    "Other",
+    "Linters",
+    "Testing"
   ],
+  "icon": "images/logo.png",
   "keywords": [
     "a11ywatch",
     "vscode",
@@ -17,22 +20,28 @@
   "activationEvents": [
     "onStartupFinished"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a11ywatch/vscode-extension.git"
+  },
+  "license": "MIT",
+  "publisher": "A11yWatch",
   "main": "./out/src/extension.js",
   "contributes": {
     "commands": [
       {
         "command": "webview.open",
         "title": "Open Webview",
-        "category": "Webview React"
+        "category": "Webview A11yWatch"
       },
       {
         "command": "extension.sendMessage",
         "title": "Send Message to Webview",
-        "category": "Webview React"
+        "category": "Webview A11yWatch"
       }
     ],
     "configuration": {
-      "title": "Webview React",
+      "title": "Webview A11yWatch",
       "properties": {}
     }
   },

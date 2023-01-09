@@ -15,7 +15,7 @@ npm i
 ```
 
 After the install process you can press `F5` to "Start Debugging" (or select in menu **"Debug" -> "Run Extension"**). 
-A new Extension Development Host window will open in which you need to open command palette (`Ctrl/Cmd + Shift + P`) and select **"Webview React: Open Webview"** to open application.
+A new Extension Development Host window will open in which you need to open command palette (`Ctrl/Cmd + Shift + P`) and select **"Webview A11yWatch: Open Webview"** to open application.
 
 Whats included:
 - Communication between Webview and Extension
@@ -25,7 +25,6 @@ Whats included:
 ## Todo
 
 - full fletched portable system usage of components from `a11ywatch-react-js`.
-- add sign out btn.
 - add configs for workflows without the webview.
-- add crawl multi site pages.
+- add option to connect to remote API via switch.
 - add [turbopack](https://turbo.build/pack).
