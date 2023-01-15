@@ -1,8 +1,12 @@
 # vscode-extension-a11ywatch
 
-[VSCode](https://code.visualstudio.com/insiders/) Extension bringing A11yWatch to your IDE. 
+[VSCode](https://code.visualstudio.com/insiders/) Extension bringing A11yWatch to your IDE.
 
 ![vscode extension example](https://user-images.githubusercontent.com/8095978/211420387-26244092-ac8e-42e2-a141-f025f7812ef4.gif)
+
+## Installation
+
+[Protoc](https://grpc.io/docs/protoc-installation/) is required to build the crawler. Follow the instructions from [crawler dependencies](https://github.com/a11ywatch/crawler#dependencies)
 
 ## Development
 
