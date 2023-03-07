@@ -26,7 +26,7 @@ const MainApp = () => {
           <AuditForm clear />
           <label>
              Full
-            <input type={"checkbox"} value={`${multi ? "multi page" : "single page"}`} checked={multi} onChange={onSetMultiEvent} style={{ marginLeft: 2 }} />
+            <input type={"checkbox"} value={`${multi ? "multi" : "single"} page`} checked={multi} onChange={onSetMultiEvent} style={{ marginLeft: 2 }} />
           </label>
         </div>
         <div className="py-2">
