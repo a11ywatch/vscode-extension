@@ -2,7 +2,7 @@
   "name": "vscode-a11ywatch-extension",
   "displayName": "A11yWatch",
   "description": "A11yWatch lite in visual studio code.",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -50,6 +50,7 @@
     "compile": "npm-run-all compile:*",
     "compile:extension": "tsc -p ./",
     "compile:view": "NODE_OPTIONS=--openssl-legacy-provider webpack --mode development",
+    "fix": "prettier --write '**/*.{js,jsx,ts,tsx}'",
     "watch": "npm-run-all -p watch:*",
     "watch:extension": "tsc -watch -p ./",
     "watch:view": "webpack --watch --mode development",
@@ -79,7 +80,7 @@
   },
   "dependencies": {
     "@a11ywatch/a11ywatch": "^0.2.197",
-    "@a11ywatch/react-a11ywatch-js": "^0.1.16",
+    "@a11ywatch/react-a11ywatch-js": "^0.1.18",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },

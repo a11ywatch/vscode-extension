@@ -1,4 +1,4 @@
-type Message = import('../src/view/messages/messageTypes').Message;
+type Message = import("../src/view/messages/messageTypes").Message;
 
 type VSCode = {
   getState(): any;

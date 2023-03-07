@@ -2,7 +2,7 @@
 
 [VSCode](https://code.visualstudio.com/insiders/) Extension bringing A11yWatch Lite to your IDE.
 
-https://user-images.githubusercontent.com/8095978/223488488-28314a37-0a61-4ce4-8cc8-cd8494a0573b.mov
+https://user-images.githubusercontent.com/8095978/223502284-13fa20a0-9f4a-4af3-81ec-a131779048aa.mov
 
 ## Installation
 

@@ -1,6 +1,6 @@
-import * as vscode from 'vscode';
-import { join } from 'path';
-import { Message, CommonMessage } from './messages/messageTypes';
+import * as vscode from "vscode";
+import { join } from "path";
+import { Message, CommonMessage } from "./messages/messageTypes";
 
 export class ViewLoader {
   public static currentPanel?: vscode.WebviewPanel;
@@ -12,12 +12,19 @@ export class ViewLoader {
     this.context = context;
     this.disposables = [];
 
-    this.panel = vscode.window.createWebviewPanel('reactApp', 'A11yWatch App', vscode.ViewColumn.One, {
-      enableScripts: true,
-      enableForms: true,
-      retainContextWhenHidden: false,
-      localResourceRoots: [vscode.Uri.file(join(this.context.extensionPath, 'out', 'app'))],
-    });
+    this.panel = vscode.window.createWebviewPanel(
+      "reactApp",
+      "A11yWatch App",
+      vscode.ViewColumn.One,
+      {
+        enableScripts: true,
+        enableForms: true,
+        retainContextWhenHidden: false,
+        localResourceRoots: [
+          vscode.Uri.file(join(this.context.extensionPath, "out", "app")),
+        ],
+      }
+    );
 
     // render webview
     this.renderWebview();
@@ -25,11 +32,15 @@ export class ViewLoader {
     // listen messages from webview
     this.panel.webview.onDidReceiveMessage(
       (message: Message) => {
-        if (message.type === 'RELOAD') {
-          vscode.commands.executeCommand('workbench.action.webview.reloadWebviewAction');
-        } else if (message.type === 'COMMON') {
+        if (message.type === "RELOAD") {
+          vscode.commands.executeCommand(
+            "workbench.action.webview.reloadWebviewAction"
+          );
+        } else if (message.type === "COMMON") {
           const text = (message as CommonMessage).payload;
-          vscode.window.showInformationMessage(`Received message from Webview: ${text}`);
+          vscode.window.showInformationMessage(
+            `Received message from Webview: ${text}`
+          );
         }
       },
       null,
@@ -81,7 +92,9 @@ export class ViewLoader {
 
   render() {
     const bundleScriptPath = this.panel.webview.asWebviewUri(
-      vscode.Uri.file(join(this.context.extensionPath, 'out', 'app', 'bundle.js'))
+      vscode.Uri.file(
+        join(this.context.extensionPath, "out", "app", "bundle.js")
+      )
     );
 
     return `

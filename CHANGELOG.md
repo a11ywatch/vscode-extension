@@ -6,6 +6,12 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## 0.0.16
+
+- Advanced form dialog options
+
+## 0.0.12
+
 - multi page scan audit
 - scan audit single page
 - Initial release
