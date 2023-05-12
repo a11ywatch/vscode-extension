@@ -3,8 +3,43 @@ import {
   AuditProvider,
   AuditList,
   FormDialog,
+  useAuditContext,
 } from "@a11ywatch/react-a11ywatch-js";
 import { A11yWatchProvider } from "@a11ywatch/react-a11ywatch-js";
+
+const TopMenu = ({
+  onSetMultiEvent,
+  multi,
+}: {
+  multi: boolean;
+  onSetMultiEvent(): void;
+}) => {
+  const { audit } = useAuditContext();
+
+  const onClearData = () => audit.reset();
+
+  return (
+    <div className="pt-2 flex space-x-2">
+      <label className="border rounded p-2">
+        Full Crawl
+        <input
+          type={"checkbox"}
+          value={`${multi ? "multi" : "single"} page`}
+          checked={multi}
+          onChange={onSetMultiEvent}
+          className="ml-2 hover:opacity-80"
+        />
+      </label>
+      <button
+        className="border rounded p-2 hover:opacity-80"
+        type="button"
+        onClick={onClearData}
+      >
+        Clear
+      </button>
+    </div>
+  );
+};
 
 const MainApp = () => {
   const [multi, setMulti] = useState<boolean>(true); // todo: bind to state
@@ -14,18 +49,7 @@ const MainApp = () => {
     <div className="py-2 space-y-2">
       <AuditProvider persist multi={multi}>
         <div className="space-y-2">
-          <div className="pt-2">
-            <label className="border rounded p-2">
-              Full Crawl
-              <input
-                type={"checkbox"}
-                value={`${multi ? "multi" : "single"} page`}
-                checked={multi}
-                onChange={onSetMultiEvent}
-                style={{ marginLeft: 2 }}
-              />
-            </label>
-          </div>
+          <TopMenu onSetMultiEvent={onSetMultiEvent} multi={multi} />
           <div className="py-2">
             <div className="border-t">
               <FormDialog
