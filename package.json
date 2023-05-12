@@ -2,7 +2,7 @@
   "name": "vscode-a11ywatch-extension",
   "displayName": "A11yWatch",
   "description": "A11yWatch lite in visual studio code.",
-  "version": "0.0.16",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -79,7 +79,7 @@
     "webpack-cli": "^5.0.1"
   },
   "dependencies": {
-    "@a11ywatch/a11ywatch": "^0.2.197",
+    "@a11ywatch/a11ywatch": "^0.3.1",
     "@a11ywatch/react-a11ywatch-js": "^0.1.18",
     "react": "18.2.0",
     "react-dom": "18.2.0"

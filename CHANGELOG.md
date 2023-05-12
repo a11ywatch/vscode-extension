@@ -6,6 +6,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## 0.1.0
+
+- major performance and audit fixes
+
 ## 0.0.16
 
 - Advanced form dialog options
