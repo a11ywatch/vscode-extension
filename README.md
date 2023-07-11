@@ -2,8 +2,6 @@
 
 [VSCode](https://code.visualstudio.com/insiders/) Extension bringing A11yWatch Lite to your IDE.
 
-![vscode extension example](https://user-images.githubusercontent.com/8095978/211420387-26244092-ac8e-42e2-a141-f025f7812ef4.gif)
-
 ## Installation
 
 [Protoc](https://grpc.io/docs/protoc-installation/) is required to build the crawler. Follow the instructions from [crawler dependencies](https://github.com/a11ywatch/crawler#dependencies)
@@ -25,9 +23,3 @@ Whats included:
 - Communication between Webview and Extension
 - Integrated configuration
 - Accessibility Engine
-
-## Todo
-
-- full fletched portable system usage of components from `a11ywatch-react-js`.
-- add configs for workflows without the webview.
-- add option to connect to remote API via switch.
