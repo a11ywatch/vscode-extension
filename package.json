@@ -2,9 +2,9 @@
   "name": "vscode-a11ywatch-extension",
   "displayName": "A11yWatch",
   "description": "A11yWatch lite web accessibility automation in visual studio code.",
-  "version": "0.1.20",
+  "version": "0.1.23",
   "engines": {
-    "vscode": "^1.74.0"
+    "vscode": "^1.77.0"
   },
   "categories": [
     "Other",
@@ -14,9 +14,9 @@
   "icon": "images/logo.png",
   "keywords": [
     "a11ywatch",
+    "accessibility",
     "vscode",
-    "vscode-extension",
-    "accessibility"
+    "vscode-extension"
   ],
   "activationEvents": [
     "onStartupFinished"
@@ -61,9 +61,9 @@
   "devDependencies": {
     "@types/glob": "^8.0.0",
     "@types/node": "^18.11.18",
-    "@types/vscode": "^1.74.0",
     "@types/react": "18.0.26",
     "@types/react-dom": "18.0.10",
+    "@types/vscode": "^1.74.0",
     "@typescript-eslint/eslint-plugin": "^5.48.0",
     "@typescript-eslint/parser": "^5.48.0",
     "css-loader": "^6.7.3",
@@ -80,8 +80,8 @@
     "webpack-cli": "^5.0.1"
   },
   "dependencies": {
-    "@a11ywatch/a11ywatch": "^0.3.43",
-    "@a11ywatch/react-a11ywatch-js": "^0.1.18",
+    "@a11ywatch/a11ywatch": "^0.3.44",
+    "@a11ywatch/react-a11ywatch-js": "^0.1.25",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },

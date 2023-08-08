@@ -3,9 +3,6 @@ import { ViewLoader } from "./view/ViewLoader";
 import { CommonMessage } from "./view/messages/messageTypes";
 import { initApplication } from "@a11ywatch/a11ywatch";
 
-// set the instance local
-process.env.NEXT_PUBLIC_A11YWATCH_API = "http://localhost:3280";
-
 export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(
     vscode.commands.registerCommand("webview.open", async () => {

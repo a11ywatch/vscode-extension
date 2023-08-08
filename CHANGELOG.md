@@ -6,6 +6,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## 0.1.21
+
+- Authentication and connecting to Remote A11yWatch instance.
+
 ## 0.1.1
 
 - clear audit button
